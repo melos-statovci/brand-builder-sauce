@@ -1,7 +1,7 @@
 export const BRAND = {
   name: "The Sauce",
   tagline: "freshly made",
-  whatsappNumber: "38344123456", // Replace with actual WhatsApp number
+  whatsappNumber: "+38343846351",
   instagramUrl: "https://www.instagram.com/thesauce.ks",
   email: "hello@thesauce.ks",
   location: "Prishtinë, Kosovo",
@@ -35,9 +35,13 @@ export const PRODUCTS: Product[] = [
   },
 ];
 
+export function getWhatsAppPhoneForUrl(): string {
+  return BRAND.whatsappNumber.replace(/\D/g, "");
+}
+
 export function buildWhatsAppUrl(productName: string, quantity: number): string {
   const message = encodeURIComponent(
     `Hello, I would like to order ${quantity} x ${productName}.`
   );
-  return `https://wa.me/${BRAND.whatsappNumber}?text=${message}`;
+  return `https://wa.me/${getWhatsAppPhoneForUrl()}?text=${message}`;
 }

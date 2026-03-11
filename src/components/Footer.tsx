@@ -1,4 +1,4 @@
-import { BRAND } from "@/config/brand";
+import { BRAND, getWhatsAppPhoneForUrl } from "@/config/brand";
 
 const Footer = () => {
   return (
@@ -31,7 +31,7 @@ const Footer = () => {
               Instagram
             </a>
             <a
-              href={`https://wa.me/${BRAND.whatsappNumber}`}
+              href={`https://wa.me/${getWhatsAppPhoneForUrl()}`}
               target="_blank"
               rel="noopener noreferrer"
               className="font-body text-sm font-semibold text-muted-foreground hover:text-primary transition-colors"

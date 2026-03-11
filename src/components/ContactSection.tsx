@@ -1,7 +1,7 @@
-import { BRAND } from "@/config/brand";
+import { BRAND, getWhatsAppPhoneForUrl } from "@/config/brand";
 
 const ContactSection = () => {
-  const whatsappUrl = `https://wa.me/${BRAND.whatsappNumber}?text=${encodeURIComponent("Hello! I have a question about The Sauce.")}`;
+  const whatsappUrl = `https://wa.me/${getWhatsAppPhoneForUrl()}?text=${encodeURIComponent("Hello! I have a question about The Sauce.")}`;
 
   return (
     <section id="contact" className="py-24 md:py-32 bg-secondary">
