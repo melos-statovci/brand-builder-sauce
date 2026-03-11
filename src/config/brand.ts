@@ -22,7 +22,7 @@ export const PRODUCTS: Product[] = [
     name: "The Sauce",
     variant: "Mild",
     description: "A smooth, rich tomato sauce with garlic and fresh basil. Perfect for pasta, pizza, and everything in between.",
-    price: "€4.50",
+    price: "10.00 €",
     image: "mild",
   },
   {
@@ -30,7 +30,7 @@ export const PRODUCTS: Product[] = [
     name: "The Sauce",
     variant: "Spicy",
     description: "The same rich base with a fiery kick of chili. For those who like it hot. Bold, intense, unforgettable.",
-    price: "€4.50",
+    price: "10.00 €",
     image: "spicy",
   },
 ];
